@@ -1,3 +1,5 @@
+console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -21,6 +23,10 @@ export default {
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [
+    '~/plugins/helpers.ts',
+    '~/plugins/axios-accessor.ts',
+    '~/plugins/vue-fragment.ts',
+    '~/plugins/vue-slick-carousel.ts'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -32,14 +38,35 @@ export default {
     '@nuxt/typescript-build',
     // https://go.nuxtjs.dev/tailwindcss
     '@nuxtjs/tailwindcss',
-    'nuxt-vite'
+    '@nuxtjs/fontawesome',
+    //'nuxt-vite'
   ],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
+    '@nuxtjs/axios',
+    [ '@nuxtjs/dotenv', {
+        path: 'environments',
+        filename: process.env.NODE_ENV === 'PRODUCTION' ? '.env.production' : '.env.development'
+      }
+    ]
   ],
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
+    extractCSS: true
+  },
+
+  // TailwindCSS
+  tailwindcss: {
+    cssPath: '~/assets/styles/tailwind.css',
+    configPath: '~/config/tailwind.config.js'
+  },
+
+  fontawesome: {
+    icons: {
+      solid: ['faStar', 'faMapMarkerAlt', 'faShoppingCart', 'faBell', 'faEnvelope', 'faHeart', 'faUser'],
+      brands: []
+    }
   }
 }

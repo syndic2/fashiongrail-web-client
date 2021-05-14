@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Mens' Top",
+    "imgUrl": "medias/images/product-categories/mens-top.png",
+    "section": "men",
+    "url": "/tops/men"
+  },
+  {
+    "name": "Mens' Bottom",
+    "imgUrl": "medias/images/product-categories/mens-bottom.png",
+    "section": "men",
+    "url": "/bottoms/men"
+  },
+  {
+    "name": "Mens' Shoes",
+    "imgUrl": "medias/images/product-categories/mens-shoes.png",
+    "section": "men",
+    "url": "/shoes/men"
+  },
+  {
+    "name": "Mens' Accessories",
+    "imgUrl": "medias/images/product-categories/mens-accessories.png",
+    "section": "men",
+    "url": "/accessories/men"
+  },
+  {
+    "name": "Womans' Top",
+    "imgUrl": "medias/images/product-categories/womans-top.png",
+    "section": "woman",
+    "url": "/tops/woman"
+  },
+  {
+    "name": "Womans' Bottom",
+    "imgUrl": "medias/images/product-categories/womans-bottom.png",
+    "section": "woman",
+    "url": "/bottoms/woman"
+  },
+  {
+    "name": "Womans' Shoes",
+    "imgUrl": "medias/images/product-categories/womans-shoes.png",
+    "section": "woman",
+    "url": "/shoes/woman"
+  },
+  {
+    "name": "Womans' Accessories",
+    "imgUrl": "medias/images/product-categories/womans-accessories.png",
+    "section": "woman",
+    "url": "/accessories/woman"
+  }
+]
