@@ -35,8 +35,8 @@
            <textarea rows="5" style="resize: none" class="p-4 w-full rounded-2xl bg-transparent focus:outline-none border border-dark-grey"></textarea>
          </div>
          <div class="grid grid-cols-2 items-center gap-4">
-           <button class="rounded-full border-2 border-grey py-2 px-6 w-1/2 justify-self-end focus:outline-none">Simpan</button>
-           <button class="rounded-full border-2 border-grey py-2 px-6 w-1/2 justify-self-start bg-dark-grey text-white focus:outline-none">Edit</button>
+           <button class="rounded-full border-2 border-grey py-2 px-6 w-1/2 justify-self-end focus:bg-dark-grey focus:text-white focus:outline-none">Simpan</button>
+           <button class="rounded-full border-2 border-grey py-2 px-6 w-1/2 justify-self-start focus:bg-dark-grey focus:text-white focus:outline-none">Edit</button>
          </div>
        </div>
       </form>
