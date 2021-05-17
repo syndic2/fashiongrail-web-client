@@ -77,7 +77,7 @@
         <div class="lg:mt-10 mt-5">
           <VueSlickCarousel v-if="productMostWanteds.length" v-bind="carouselSettings.mostWanteds">
             <div class="lg:p-4 p-2" :key="index" v-for="(product, index) in productMostWanteds">
-              <Product :product="product"></Product>
+              <Product :product="product" />
             </div>
           </VueSlickCarousel>
         </div>
@@ -104,7 +104,6 @@
   import { Vue, Component, Prop } from 'nuxt-property-decorator';
   import VueSlickCarousel from 'vue-slick-carousel'
   import 'vue-slick-carousel/dist/vue-slick-carousel.css'
-  // optional style for arrows & dots
   import 'vue-slick-carousel/dist/vue-slick-carousel-theme.css'
 
   import { $axios } from '../utilities/api';
@@ -154,7 +153,7 @@
         ]
       }
     };
-    public featuredEvents: String[]= ['event-1.jpg', 'event-2.jpg', 'event-3.jpg'];
+    public featuredEvents: string[]= ['event-1.jpg', 'event-2.jpg', 'event-3.jpg'];
     public featuredBrands= [
       {
         sections: [

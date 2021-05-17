@@ -6,7 +6,9 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 5,
     "sold": 100,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-1.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-1.png",
+    "urlName": "most-wanted-1",
+    "url": "/store-1/most-wanted-1"
   },
   {
     "id": 2,
@@ -15,7 +17,9 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 4,
     "sold": 200,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-2.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-2.png",
+    "urlName": "most-wanted-2",
+    "url": "/store-1/most-wanted-2"
   },
   {
     "id": 3,
@@ -24,7 +28,9 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 5,
     "sold": 350,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-3.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-3.png",
+    "urlName": "most-wanted-3",
+    "url": "/store-1/most-wanted-3"
   },
   {
     "id": 4,
@@ -33,7 +39,9 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 4,
     "sold": 400,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-4.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-4.png",
+    "urlName": "most-wanted-4",
+    "url": "/store-2/most-wanted-4"
   },
   {
     "id": 5,
@@ -42,7 +50,9 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 5,
     "sold": 500,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-5.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-5.png",
+    "urlName": "most-wanted-5",
+    "url": "/store-2/most-wanted-5"
   },
   {
     "id": 6,
@@ -51,6 +61,8 @@
     "location": "Surabaya, Jawa Timur",
     "rating": 4,
     "sold": 600,
-    "imgUrl": "medias/images/most-wanteds/most-wanted-6.png"
+    "imgUrl": "/medias/images/most-wanteds/most-wanted-6.png",
+    "urlName": "most-wanted-6",
+    "url": "/store-2/most-wanted-6"
   }
 ]

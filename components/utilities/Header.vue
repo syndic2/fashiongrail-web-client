@@ -1,7 +1,7 @@
 <template>
   <header>
     <div id="header-grid" class="lg:gap-4 gap-2 items-center bg-light-grey mt-16 p-5 lg:py-10 lg:px-24">
-      <NuxtLink to="/" class="block w-full h-full bg-no-repeat bg-center bg-contain" style="background-image: url(medias/images/fg-logo.png)"></NuxtLink>
+      <NuxtLink to="/" class="block w-full h-full bg-no-repeat bg-center bg-contain" style="background-image: url(/medias/images/fg-logo.png)"></NuxtLink>
       <div class="relative">
         <span class="absolute block inset-y-0 left-0 flex items-center lg:mx-3 mx-2">
           <button type="submit" class="focus:outline-none">
@@ -22,12 +22,10 @@
           </NuxtLink>
         </template>
         <template v-else>
-          <div v-if="authenticatedMenuIcons.length" class="grid grid-flow-col divide-x-2 divide-grey">
-            <fragment :key="index" v-for="(icon, index) of authenticatedMenuIcons">
-              <NuxtLink class="text-dark-grey lg:text-base text-xs lg:px-2" :to="icon.url">
-                <font-awesome-icon :icon="icon.name" />
-              </NuxtLink>
-            </fragment>
+          <div v-if="authenticatedMenuIcons.length" class="grid grid-flow-col justify-items-center items-center divide-x-2 divide-grey">
+            <NuxtLink :to="icon.url" :key="index" v-for="(icon, index) of authenticatedMenuIcons" class="text-dark-grey lg:text-base text-xs lg:px-2">
+              <font-awesome-icon :icon="icon.name" />
+            </NuxtLink>
           </div>
         </template>
       </div>

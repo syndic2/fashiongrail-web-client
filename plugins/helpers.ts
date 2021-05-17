@@ -8,4 +8,3 @@ declare module 'vue/types/vue' {
 }
 
 Vue.prototype.$thousandSeparators = thousandSeparators;
-

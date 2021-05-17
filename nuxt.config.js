@@ -25,8 +25,7 @@ export default {
   plugins: [
     '~/plugins/helpers.ts',
     '~/plugins/axios-accessor.ts',
-    '~/plugins/vue-fragment.ts',
-    '~/plugins/vue-slick-carousel.ts'
+    '~/plugins/vue-fragment.ts'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
@@ -54,7 +53,10 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {
-    extractCSS: true
+    extractCSS: true,
+    extend (config, ctx) {
+      config.resolve.symlinks = false
+    }
   },
 
   // TailwindCSS
@@ -65,8 +67,34 @@ export default {
 
   fontawesome: {
     icons: {
-      solid: ['faStar', 'faMapMarkerAlt', 'faShoppingCart', 'faBell', 'faEnvelope', 'faHeart', 'faUser'],
+      solid: [
+        'faBell',
+        'faStar',
+        'faHeart',
+        'faUser',
+        'faEnvelope',
+        'faChevronUp',
+        'faChevronDown',
+        'faMapMarkerAlt',
+        'faShoppingCart'
+      ],
       brands: []
+    }
+  },
+
+  // Extends Routes
+  router: {
+    extendRoutes(routes, resolve) {
+
+      routes.forEach(route => {
+        switch (route.path) {
+          case '/catalogs/:productUrlName':
+            route.path= '/:storeUrlName/:productUrlName';
+            break;
+        }
+      });
+
+      return routes;
     }
   }
 }
