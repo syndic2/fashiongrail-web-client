@@ -9,6 +9,9 @@ module.exports = {
         'dark-grey': '#A2927C',
         'maroon': '#7B322F'
       },
+      height: {
+        'fit-content':'fit-content'
+      },
       borderRadius: {
         '4xl':'2.5rem'
       },
