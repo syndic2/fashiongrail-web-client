@@ -1,8 +1,8 @@
 <template>
   <main>
     <div class="p-16 grid grid-cols-4 gap-12" >
-      <div class="py-12 bg-light-grey rounded-4xl">
-        <div class="grid grid-rows-12 px-12">
+      <div class="py-12 bg-light-grey rounded-4xl h-fit-content">
+        <div class="grid grid-rows-12 px-12 ">
           <div class="row-span-8 flex flex-col justify-center items-center gap-4 ">
             <img src="/medias/logos/brands/kenzo.png" class="w-32 h-32 object-contain bg-white rounded-full" @click="changeDashboard('profile')">
             <span class="text-maroon text-2xl font-bold">Kenzo</span>
@@ -31,25 +31,27 @@
 import { Vue, Component, Prop } from 'nuxt-property-decorator';
 import ProfileComponent from '../../components/pages/store/dashboards/Profile.vue'
 import HomeComponent from '../../components/pages/store/dashboards/Home.vue'
+import OrdersComponent from "../../components/pages/store/dashboards/Orders.vue";
 @Component({
   components: {
     ProfileComponent,
-    HomeComponent
+    HomeComponent,
+    OrdersComponent
   }
 })
 export default class StorePage extends Vue{
-  public dashboard = HomeComponent
+   public dashboard = HomeComponent
 
   changeDashboard(dashboard:string){
     switch (dashboard) {
       case 'profile':
-        this.dashboard= ProfileComponent;
+        this.dashboard= ProfileComponent
         break;
       case 'home':
-        this.dashboard= HomeComponent;
+        this.dashboard= HomeComponent
         break;
-      default:
-        this.dashboard=ProfileComponent;
+      case 'pesanan':
+        this.dashboard= OrdersComponent
         break;
     }
 
