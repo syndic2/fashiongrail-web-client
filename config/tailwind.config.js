@@ -13,6 +13,7 @@ module.exports = {
         'fit-content':'fit-content'
       },
       borderRadius: {
+        '3.5xl':'1.75rem',
         '4xl':'2.5rem'
       },
       gridTemplateRows:{
@@ -30,6 +31,9 @@ module.exports = {
         '11': '11',
         '12': '12',
         '13': '13',
+      },
+      scale: {
+        '135': '1.35',
       }
     }
 

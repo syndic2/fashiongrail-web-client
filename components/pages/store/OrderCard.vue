@@ -12,10 +12,10 @@
     </div>
     <div class="grid grid-cols-5 gap-0.5">
       <div class="grid grid-flow-col col-span-2 items-center  bg-grey rounded-l-2xl p-4 gap-2">
-        <img :src="`/medias/images/products/product-${order.products[0].product_id}.png`" class="bg-white rounded-xl w-24 h-24">
+        <img :src="`/medias/images/products/product-${order.products[0].product_id}.png`" class="bg-white rounded-xl w-16 h-full object-contain">
         <div class="flex flex-col">
           <span class="text-xl font-bold">{{order.products[0].product_name}}</span>
-          <span class="text-xs">{{order.products[0].product_details}}</span>
+          <span class="text-xs">{{order.products[0].product_detail}}</span>
         </div>
         <span class="font-bold">x{{order.products[0].qty}}</span>
       </div>
