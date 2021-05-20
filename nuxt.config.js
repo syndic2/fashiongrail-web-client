@@ -1,6 +1,8 @@
 import fontAwesomeIcons from "./config/font-awesome-icons";
 
 export default {
+  target: 'server',
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Fashiongrail',
