@@ -1,15 +1,15 @@
 <template>
-  <div class="relative bg-light-grey rounded-md grid auto-rows-auto gap-2 lg:p-4 p-2">
+  <div class="relative bg-light-grey rounded-xl lg:p-4 p-2">
     <i class="cursor-pointer absolute lg:-right-3 -right-1.5 lg:bottom-12 bottom-10 lg:w-6 w-3">
       <img src="/medias/icons/favourite2.png" alt="">
     </i>
-    <NuxtLink :to="product.url">
-      <img class="transition duration-50 ease-in-out object-contain w-full lg:h-36 h-24" :src="product.imgUrl" alt="">
+    <NuxtLink :to="product.url" class="grid grid-flow-row gap-2">
+      <img class="bg-white object-contain rounded-xl w-full lg:h-36 h-24" :src="product.imgUrl" alt="">
       <div class="lg:text-sm text-xs">
         <span class="block font-bold">{{ product.name }}</span>
         <span>Rp. {{ $thousandSeparators(product.price) }}</span>
       </div>
-      <div class="flex lg:gap-2 gap-1 lg:text-sm text-xs">
+      <div class="flex lg:gap-2 gap-1 lg:text-sm text-xs mt-3">
         <div>
           <font-awesome-icon icon="map-marker-alt" />
         </div>

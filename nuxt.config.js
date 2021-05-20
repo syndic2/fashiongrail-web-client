@@ -1,4 +1,4 @@
-console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+import fontAwesomeIcons from "./config/font-awesome-icons";
 
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
@@ -66,20 +66,7 @@ export default {
   },
 
   fontawesome: {
-    icons: {
-      solid: [
-        'faBell',
-        'faStar',
-        'faHeart',
-        'faUser',
-        'faEnvelope',
-        'faChevronUp',
-        'faChevronDown',
-        'faMapMarkerAlt',
-        'faShoppingCart'
-      ],
-      brands: []
-    }
+    icons: fontAwesomeIcons
   },
 
   // Extends Routes
@@ -91,6 +78,13 @@ export default {
           case '/catalogs/:productUrlName':
             route.path= '/:storeUrlName/:productUrlName';
             break;
+
+          //Customer
+          case '/customer/favourites':
+            route.path= '/favourites';
+            break;
+
+          //Store
         }
       });
 
@@ -98,3 +92,6 @@ export default {
     }
   }
 }
+
+console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+

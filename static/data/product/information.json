@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "stock": 100,
+    "brand": "Brand 1",
+    "material": "Katun",
+    "size_informations": [
+      {
+        "name": "S",
+        "sizes": [
+          { "type": "Panjang Baju", "size": "45-47 cm" },
+          { "type": "Lingkar Dada", "size": "48-50 cm" }
+        ]
+      },
+      {
+        "name": "M",
+        "sizes": [
+          { "type": "Panjang Baju", "size": "48-50 cm" },
+          { "type": "Lingkar Dada", "size": "50-52 cm" }
+        ]
+      },
+      {
+        "name": "L",
+        "sizes": [
+          { "type": "Panjang Baju", "size": "52-54 cm" },
+          { "type": "Lingkar Dada", "size": "54-56 cm" }
+        ]
+      },
+      {
+        "name": "XL",
+        "sizes": [
+          { "type": "Panjang Baju", "size": "56-58 cm" },
+          { "type": "Lingkar Dada", "size": "58-60 cm" }
+        ]
+      }
+    ]
+  }
+]
