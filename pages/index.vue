@@ -5,7 +5,7 @@
       <div class="lg:p-24 p-10">
         <VueSlickCarousel v-if="featuredEvents.length" v-bind="carouselSettings.featuredEvent">
           <div :key="index" v-for="(event, index) of featuredEvents">
-            <NuxtLink :to="'/events'">
+            <NuxtLink to="">
               <img class="object-cover object-center w-full lg:h-96 h-44" :src="`medias/images/featured-events/${event}`" alt="">
             </NuxtLink>
           </div>
@@ -54,12 +54,12 @@
             <div class="grid grid-rows-3 grid-cols-3 lg:gap-4 gap-2 lg:p-4 p-2">
               <fragment :key="j" v-for="(brand, j) of featured.sections">
                 <div v-if="brand.isLarge" class="flex items-center row-span-2 col-span-2 border-2 border-dark-grey shadow-lg lg:p-10 p-5">
-                  <NuxtLink :to="'/brands'">
+                  <NuxtLink to="">
                     <img class="transition duration-50 ease-in-out transform hover:scale-110 object-contain w-full lg:h-16" :src="`medias/logos/brands/${brand.name}`" alt="">
                   </NuxtLink>
                 </div>
                 <div v-else class="flex items-center border-2 border-dark-grey shadow-lg lg:p-6 p-3">
-                  <NuxtLink :to="'/brands'">
+                  <NuxtLink to="">
                     <img class="transition duration-50 ease-in-out transform hover:scale-110 object-contain w-full lg:h-10" :src="`medias/logos/brands/${brand.name}`" alt="">
                   </NuxtLink>
                 </div>
