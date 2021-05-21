@@ -1,0 +1,18 @@
+header putih bisa dikecilin
+header gray bisa dikecilin
+icon di header digedein
+buat semua UI button jadi lowercase
+
+padding di detail product bagian bawah (yg 3 gambar) bisa dikecilin
+pengiriman di detil product round cb box dikecilin
+
+favorite component product FA icon bintang warna sesuai rating, ada star kosong
+
+dummy box store bisa di hapus
+
+round component card samakan header dan isi e
+
+round deskripsi di profile dikecilin
+kecilin button save profile
+
+sticky header
