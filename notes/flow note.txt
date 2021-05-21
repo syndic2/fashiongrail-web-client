@@ -1,0 +1,14 @@
+Pesanan menunggu : 0 -> 1
+
+Pesanan di proses/diterima/dikemas : 1 -> -1| 2
+
+Pesanan ditolak penjual : -1 stop
+
+Input nomor resi : 2 -> 3
+
+Pesanan sudah dikirim : 3 -> 4 atau di tolak pembeli(retur)
+
+Retur?
+
+Pesanan diterima 4 ->  retur atau final
+
