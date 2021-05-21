@@ -95,5 +95,5 @@ export default {
   }
 }
 
-console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+console.log('env: ', process.env.NODE_ENV === 'PRODUCTION' ? '.env.production' : '.env.development')
 
