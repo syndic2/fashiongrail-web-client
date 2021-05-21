@@ -51,7 +51,7 @@
     public productInformation: ProductInformation | null | undefined= null;
 
     async fetch() {
-      await $axios.$get('/data/product/information.json').then((productInformations: ProductInformation[]) => {
+      await $axios.$get(`${process.env.BASE_URL}/data/product/information.json`).then((productInformations: ProductInformation[]) => {
         this.productInformation= productInformations.find(object => object.id === 1);
         this.topSections= [
           { heading: 'Merk', value: this.productInformation?.brand },

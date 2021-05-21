@@ -37,7 +37,7 @@
     public shipmentInformations: ShipmentInformation[]= [];
 
     async fetch() {
-      this.shipmentInformations= await $axios.$get('/data/shipment-informations.json');
+      this.shipmentInformations= await $axios.$get(`${process.env.BASE_URL}/data/shipment-informations.json`);
       this.selectedShipment= this.shipmentInformations.find((object: ShipmentInformation) => object.id === this.selectedShipmentId);
     }
 
