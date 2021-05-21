@@ -52,7 +52,7 @@
     public products: Product[]= [];
 
     async fetch() {
-      this.products= await $axios.$get('/data/product/items.json');
+      this.products= await $axios.$get(`${process.env.BASE_URL}/data/product/items.json`);
     }
   }
 </script>

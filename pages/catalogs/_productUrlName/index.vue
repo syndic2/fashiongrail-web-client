@@ -127,7 +127,7 @@
     };
 
     async fetch() {
-      await $axios.$get('/data/product/items.json').then((products: Product[]) => {
+      await $axios.$get(`${process.env.BASE_URL}/data/product/items.json`).then((products: Product[]) => {
         this.product= products.find((object: Product) => object.urlName === this.$route.params.productUrlName);
       });
     }

@@ -41,7 +41,7 @@ import {Order} from "../../../../models/order/order";
 export default class OrdersComponent extends Vue {
   public orders:Order[] = []
   async fetch(){
-    this.orders = await $axios.$get('/data/store/orders/orders.json')
+    this.orders = await $axios.$get(`${process.env.BASE_URL}/data/store/orders/orders.json`)
   }
 }
 </script>

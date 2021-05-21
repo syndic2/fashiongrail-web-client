@@ -186,12 +186,12 @@
         ]
       }
     ];
-    public productMostWanteds: Product[]= [];
     public productCategories: ProductCategories[]= [];
+    public productMostWanteds: Product[]= [];
 
     async fetch() {
-      this.productMostWanteds= await $axios.$get('/data/product/most-wanteds.json');
-      this.productCategories= await $axios.$get('/data/product/categories.json');
+      this.productCategories= await $axios.$get(`${process.env.BASE_URL}/data/product/categories.json`);
+      this.productMostWanteds= await $axios.$get(`${process.env.BASE_URL}/data/product/most-wanteds.json`);
     }
   };
 </script>

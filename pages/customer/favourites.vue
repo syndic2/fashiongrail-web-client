@@ -35,7 +35,7 @@
     public favouritedProducts: Product[]= [];
 
     async fetch() {
-      this.favouritedProducts= await $axios.$get('/data/product/items.json');
+      this.favouritedProducts= await $axios.$get(`${process.env.BASE_URL}/data/product/items.json`);
       this.favouritedProducts= this.favouritedProducts.slice(0, 10);
     }
   }
