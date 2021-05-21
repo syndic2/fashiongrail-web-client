@@ -1,0 +1,29 @@
+[
+  {
+    "id": 1,
+    "province": "Sidoarjo",
+    "couriers": [
+      { "name": "JNE Instant", "price": 79000 },
+      { "name": "JNE Regular", "price": 7000 },
+      { "name": "JNT", "price": 8000 }
+    ]
+  },
+  {
+    "id": 2,
+    "province": "Surabaya",
+    "couriers": [
+      { "name": "JNE Instant", "price": 89000 },
+      { "name": "JNE Regular", "price": 8000 },
+      { "name": "JNT", "price": 9000 }
+    ]
+  },
+  {
+    "id": 3,
+    "province": "Jakarta",
+    "couriers": [
+      { "name": "JNE Instant", "price": 99000 },
+      { "name": "JNE Regular", "price": 10000 },
+      { "name": "JNT", "price": 11000 }
+    ]
+  }
+]

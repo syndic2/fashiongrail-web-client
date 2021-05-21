@@ -7,7 +7,7 @@ module.exports = {
         'light-grey': '#F4F0ED',
         'grey': '#D5CBC1',
         'dark-grey': '#A2927C',
-        'maroon': '#7B322F'
+        'maroon': '#7B322F' 
       },
       height: {
         'fit-content':'fit-content'

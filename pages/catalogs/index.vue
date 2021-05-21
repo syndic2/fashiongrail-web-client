@@ -22,9 +22,7 @@
               <button class="rounded-full border border-dark-grey focus:outline-none hover:bg-dark-grey hover:text-white px-5 py-1">harga tinggi</button>
             </div>
             <div class="grid grid-cols-5 grid-flow-row gap-5">
-              <client-only placeholder="Loading catalogs...">
-                <Product :product="product" :key="index" v-for="(product, index) in products" />
-              </client-only>
+              <Product :product="product" :key="index" v-for="(product, index) in products" />
             </div>
           </div>
         </div>
@@ -54,7 +52,7 @@
     public products: Product[]= [];
 
     async fetch() {
-      this.products= await $axios.$get('/data/product/items.json');
+      this.products= await $axios.$get(`${process.env.BASE_URL}/data/product/items.json`);
     }
   }
 </script>

@@ -1,6 +1,8 @@
-console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+import fontAwesomeIcons from "./config/font-awesome-icons";
 
 export default {
+  ssr: true,
+
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'Fashiongrail',
@@ -46,7 +48,7 @@ export default {
     '@nuxtjs/axios',
     [ '@nuxtjs/dotenv', {
         path: 'environments',
-        filename: process.env.NODE_ENV === 'PRODUCTION' ? '.env.production' : '.env.development'
+        filename: process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development'
       }
     ]
   ],
@@ -66,20 +68,7 @@ export default {
   },
 
   fontawesome: {
-    icons: {
-      solid: [
-        'faBell',
-        'faStar',
-        'faHeart',
-        'faUser',
-        'faEnvelope',
-        'faChevronUp',
-        'faChevronDown',
-        'faMapMarkerAlt',
-        'faShoppingCart'
-      ],
-      brands: []
-    }
+    icons: fontAwesomeIcons
   },
 
   // Extends Routes
@@ -91,6 +80,13 @@ export default {
           case '/catalogs/:productUrlName':
             route.path= '/:storeUrlName/:productUrlName';
             break;
+
+          //Customer
+          case '/customer/favourites':
+            route.path= '/favourites';
+            break;
+
+          //Store
         }
       });
 
@@ -98,3 +94,6 @@ export default {
     }
   }
 }
+
+console.log('env: ', process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development')
+
