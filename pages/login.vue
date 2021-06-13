@@ -13,7 +13,7 @@
             <input class="border border-dark-grey rounded-full lg:w-full lg:mt-2 lg:px-4 lg:py-3 focus:outline-none" type="password">
           </div>
           <div class="lg:text-lg text-sm text-center lg:mt-12 mt-8">
-            <button type="submit" class="bg-dark-grey italic text-white font-semibold rounded-full lg:px-10 lg:py-3 px-5 py-2">login</button>
+            <button type="submit" class="bg-dark-grey italic text-white font-semibold rounded-full lg:px-10 lg:py-3 px-5 py-2 focus:outline-none">login</button>
             <div class="mt-2">
               forgot password? <NuxtLink to="/forgot-password"><span class="italic text-maroon font-bold">help</span></NuxtLink>
             </div>

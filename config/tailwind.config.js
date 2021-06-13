@@ -7,14 +7,17 @@ module.exports = {
         'light-grey': '#F4F0ED',
         'grey': '#D5CBC1',
         'dark-grey': '#A2927C',
-        'maroon': '#7B322F' 
+        'maroon': '#7B322F'
+      },
+      width: {
+        'fit-content': 'fit-content'
       },
       height: {
-        'fit-content':'fit-content'
+        'fit-content': 'fit-content'
       },
       borderRadius: {
-        '3.5xl':'1.75rem',
-        '4xl':'2.5rem'
+        '3.5xl': '1.75rem',
+        '4xl': '2.5rem'
       },
       gridTemplateRows:{
         '8': 'repeat(8, minmax(0, 1fr))',
@@ -41,5 +44,7 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')
+  ],
 }

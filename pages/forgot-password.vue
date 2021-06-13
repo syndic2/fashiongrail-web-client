@@ -12,7 +12,7 @@
             <input type="email" class="border border-dark-grey rounded-full lg:w-full lg:mt-2 lg:px-4 lg:py-2 focus:outline-none">
           </div>
           <div class="text-center lg:mt-12 mt-8">
-            <button type="submit" class="bg-dark-grey italic lg:text-lg text-white font-semibold rounded-full lg:px-10 lg:py-2 px-5 py-1">send</button>
+            <button type="submit" class="bg-dark-grey italic lg:text-lg text-white font-semibold rounded-full lg:px-10 lg:py-2 px-5 py-1 focus:outline-none">send</button>
           </div>
         </form>
       </div>

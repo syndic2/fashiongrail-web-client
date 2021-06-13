@@ -40,7 +40,7 @@
   export default class HeaderComponent extends Vue {
     public isAuthenticated: boolean= true;
     public authenticatedMenuIcons= [
-      { name: 'shopping-cart', url: '' },
+      { name: 'shopping-cart', url: '/carts' },
       { name: 'bell', url: '' },
       { name: 'envelope', url: '' },
       { name: 'heart', url: '/favourites' },

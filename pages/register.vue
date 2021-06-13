@@ -29,7 +29,7 @@
             <input type="password" class="border border-dark-grey rounded-full lg:w-full lg:mt-2 lg:px-4 lg:py-3 focus:outline-none">
           </div>
           <div class="text-center mt-12">
-            <button type="submit" class="bg-dark-grey italic lg:text-lg text-sm text-white font-semibold rounded-full lg:px-8 lg:py-2 px-4 py-1">sign - up</button>
+            <button type="submit" class="bg-dark-grey italic lg:text-lg text-sm text-white font-semibold rounded-full lg:px-8 lg:py-2 px-4 py-1 focus:outline-none">sign - up</button>
           </div>
         </form>
       </div>

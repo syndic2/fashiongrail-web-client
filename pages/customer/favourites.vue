@@ -27,9 +27,12 @@
 
   import { $axios } from '../../utilities/api';
   import { Product } from '../../models/product/product';
+  import ProductComponent from '~/components/Product.vue';
 
   @Component({
-
+    components: {
+      ProductComponent
+    }
   })
   export default class FavouritesPage extends Vue {
     public favouritedProducts: Product[]= [];

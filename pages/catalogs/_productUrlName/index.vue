@@ -37,7 +37,7 @@
                 <span class="pl-2">{{ product.sold }} terjual</span>
               </div>
             </div>
-
+        
             <AccordionContainer>
               <AccordionPanel>
                 <span slot="header" class="text-xl text-left flex-grow">detail produk</span>

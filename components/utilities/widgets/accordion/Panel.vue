@@ -1,8 +1,9 @@
 <template>
   <div>
-    <button @click="onToogle" class="flex items-center gap-2 border-b border-dark-grey w-full pb-2 focus:outline-none">
+    <button @click="onToogle" class="flex items-center gap-4 border-b-2 border-dark-grey w-full pb-2 focus:outline-none">
       <slot name="header" />
       <font-awesome-icon :icon="isOpen === true ? 'chevron-up' : 'chevron-down'" />
+      <slot name="extras" />
     </button>
     <div class="accordion-content" ref="accordionContent">
       <slot name="content" />

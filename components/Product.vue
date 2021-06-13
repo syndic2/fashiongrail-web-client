@@ -4,7 +4,7 @@
       <img src="/medias/icons/favourite2.png" alt="">
     </i>
     <NuxtLink :to="product.url" class="grid grid-flow-row gap-2">
-      <img class="bg-white object-contain rounded-xl w-full lg:h-36 h-24" :src="product.imgUrl" alt="">
+      <img :src="product.imgUrl" class="bg-white object-contain rounded-xl w-full lg:h-36 h-24" alt="">
       <div class="lg:text-sm text-xs">
         <span class="block font-bold">{{ product.name }}</span>
         <span>Rp. {{ $thousandSeparators(product.price) }}</span>

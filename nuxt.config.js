@@ -86,6 +86,14 @@ export default {
             route.path= '/favourites';
             break;
 
+          case '/customer/carts':
+            route.path= '/carts';
+            break;
+
+          case '/customer/checkout':
+            route.path= '/checkout';
+            break;
+
           //Store
         }
       });
