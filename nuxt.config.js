@@ -57,7 +57,7 @@ export default {
   build: {
     extractCSS: true,
     extend (config, ctx) {
-      config.resolve.symlinks = false
+      config.resolve.symlinks= false
     }
   },
 
@@ -82,6 +82,10 @@ export default {
             break;
 
           //Customer
+          case '/customer/profile':
+            route.path= '/profile';
+            break;
+
           case '/customer/favourites':
             route.path= '/favourites';
             break;

@@ -20,8 +20,11 @@
   </main>
 </template>
 
-<script>
-  export default {
+<script lang="ts">
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
 
+  @Component
+  export default class ForgotPasswordPage extends Vue {
+    
   }
 </script>

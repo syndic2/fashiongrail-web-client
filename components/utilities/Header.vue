@@ -35,7 +35,7 @@
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'nuxt-property-decorator';
-
+  
   @Component
   export default class HeaderComponent extends Vue {
     public isAuthenticated: boolean= true;
@@ -44,7 +44,7 @@
       { name: 'bell', url: '' },
       { name: 'envelope', url: '' },
       { name: 'heart', url: '/favourites' },
-      { name: 'user', url: '' }
+      { name: 'user', url: '/profile' }
     ];
   }
 </script>

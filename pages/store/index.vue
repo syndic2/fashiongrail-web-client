@@ -23,40 +23,35 @@
   </main>
 </template>
 
-
-
-
-
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator';
-import ProfileComponent from '../../components/pages/store/dashboards/Profile.vue'
-import HomeComponent from '../../components/pages/store/dashboards/Home.vue'
-import OrdersComponent from "../../components/pages/store/dashboards/Orders.vue";
-@Component({
-  components: {
-    ProfileComponent,
-    HomeComponent,
-    OrdersComponent
-  }
-})
-export default class StorePage extends Vue{
-   public dashboard = HomeComponent
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
+  import ProfileComponent from '../../components/pages/store/dashboards/Profile.vue'
+  import HomeComponent from '../../components/pages/store/dashboards/Home.vue'
+  import OrdersComponent from "../../components/pages/store/dashboards/Orders.vue";
 
-  changeDashboard(dashboard:string){
-    switch (dashboard) {
-      case 'profile':
-        this.dashboard= ProfileComponent
-        break;
-      case 'home':
-        this.dashboard= HomeComponent
-        break;
-      case 'pesanan':
-        this.dashboard= OrdersComponent
-        break;
+  @Component({
+    components: {
+      ProfileComponent,
+      HomeComponent,
+      OrdersComponent
     }
+  })
+  export default class StorePage extends Vue{
+    public dashboard = HomeComponent
 
+    changeDashboard(dashboard:string) {
+      switch (dashboard) {
+        case 'profile':
+          this.dashboard= ProfileComponent
+          break;
+        case 'home':
+          this.dashboard= HomeComponent
+          break;
+        case 'pesanan':
+          this.dashboard= OrdersComponent
+          break;
+      }
+    }
   }
-
-}
 </script>
 

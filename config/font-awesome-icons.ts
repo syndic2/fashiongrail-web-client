@@ -6,6 +6,7 @@ export default {
     'faPlusCircle',
     'faMinusCircle',
     'faTrashAlt',
+    'faPowerOff',
     'faUser',
     'faEnvelope',
     'faTruck',

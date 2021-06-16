@@ -25,7 +25,10 @@
 </template>
 
 <script lang="ts">
-  export default {
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
+
+  @Component
+  export default class LoginPage extends Vue {
 
   }
 </script>

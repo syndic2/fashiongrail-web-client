@@ -4,4 +4,4 @@ import AccordionPanel from '../accordion/Panel.vue';
 export {
   AccordionContainer,
   AccordionPanel
-}
+};
