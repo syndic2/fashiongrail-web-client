@@ -1,6 +1,6 @@
 <template>
   <main>
-    <div class="p-16 grid grid-cols-4 gap-12" >
+    <div class="p-16 flex justify-center gap-12" >
       <div class="py-12 bg-light-grey rounded-4xl h-fit-content">
         <div class="grid grid-rows-12 px-12 ">
           <div class="row-span-8 flex flex-col justify-center items-center gap-4 ">
@@ -14,7 +14,7 @@
           <button class="row-start-12 rounded-full border-2 border-grey py-2 px-6 w-full">Logout</button>
         </div>
       </div>
-      <div class="p-8 bg-light-grey col-span-3 rounded-4xl">
+      <div class="p-8 bg-light-grey col-span-3 rounded-4xl" style="width: 52rem">
         <keep-alive>
           <component v-bind:is="dashboard" />
         </keep-alive>
@@ -28,12 +28,14 @@
   import ProfileComponent from '../../components/pages/store/dashboards/Profile.vue'
   import HomeComponent from '../../components/pages/store/dashboards/Home.vue'
   import OrdersComponent from "../../components/pages/store/dashboards/Orders.vue";
+  import ProductsComponent from "~/components/pages/store/dashboards/Products.vue";
 
   @Component({
     components: {
       ProfileComponent,
       HomeComponent,
-      OrdersComponent
+      OrdersComponent,
+      ProductsComponent
     }
   })
   export default class StorePage extends Vue{
@@ -42,13 +44,16 @@
     changeDashboard(dashboard:string) {
       switch (dashboard) {
         case 'profile':
-          this.dashboard= ProfileComponent
+          this.dashboard = ProfileComponent
           break;
         case 'home':
-          this.dashboard= HomeComponent
+          this.dashboard = HomeComponent
           break;
         case 'pesanan':
-          this.dashboard= OrdersComponent
+          this.dashboard = OrdersComponent
+          break;
+        case 'etalase':
+          this.dashboard = ProductsComponent
           break;
       }
     }
