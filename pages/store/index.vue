@@ -25,35 +25,38 @@
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'nuxt-property-decorator';
-  import ProfileComponent from '../../components/pages/store/dashboards/Profile.vue'
-  import HomeComponent from '../../components/pages/store/dashboards/Home.vue'
-  import OrdersComponent from "../../components/pages/store/dashboards/Orders.vue";
-  import ProductsComponent from "~/components/pages/store/dashboards/Products.vue";
+  import HomeDashboard from '../../components/pages/store/dashboards/Home.vue';
+  import ProfileDashboard from '../../components/pages/store/dashboards/Profile.vue';
+  import OrdersDashbboard from "../../components/pages/store/dashboards/Orders.vue";
+  import ProductsDashboard from "~/components/pages/store/dashboards/Products.vue";
 
   @Component({
     components: {
-      ProfileComponent,
-      HomeComponent,
-      OrdersComponent,
-      ProductsComponent
+      HomeDashboard,
+      ProfileDashboard,
+      OrdersDashbboard,
+      ProductsDashboard
     }
   })
   export default class StorePage extends Vue{
-    public dashboard = HomeComponent
-
+    public dashboard = HomeDashboard
+    
     changeDashboard(dashboard:string) {
       switch (dashboard) {
-        case 'profile':
-          this.dashboard = ProfileComponent
-          break;
         case 'home':
-          this.dashboard = HomeComponent
+          this.dashboard = HomeDashboard
           break;
+
+        case 'profile':
+          this.dashboard = ProfileDashboard
+          break;
+
         case 'pesanan':
-          this.dashboard = OrdersComponent
+          this.dashboard = OrdersDashbboard
           break;
+
         case 'etalase':
-          this.dashboard = ProductsComponent
+          this.dashboard = ProductsDashboard
           break;
       }
     }

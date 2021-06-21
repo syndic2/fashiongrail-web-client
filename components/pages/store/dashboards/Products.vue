@@ -13,27 +13,18 @@
           <span class="font-semibold">Ket</span>
         </div>
         <div class="mt-4 grid grid-flow-row gap-4 overflow-y-auto h-96">
-          <CheckoutItem/>
+          testing
         </div>
       </div>
     </div>
-
   </div>
-
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator';
-import CheckoutItem from "~/components/pages/customer/checkout/CheckoutItem.vue";
-@Component(
-  {
-    components:{
-      CheckoutItem
-    }
-  }
-)
-@Component
-export default class ProductsComponent extends Vue {
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
 
-}
+  @Component
+  export default class ProductsDashboardComponent extends Vue {
+
+  }
 </script>
