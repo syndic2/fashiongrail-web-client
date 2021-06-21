@@ -27,7 +27,7 @@
         </div>
         <div class="flex flex-col items-center justify-center gap-2">
           <img class="bg-dark-grey rounded-2xl py-8 w-auto h-56 object-contain opacity-0"  src="/medias/icons/store/siapkirim.png" alt="">
-          <span class="italic text-dark-grey">&nbsp</span>
+          <span class="italic text-dark-grey">&nbsp;</span>
         </div>
       </div>
     </div>
@@ -35,11 +35,11 @@
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator';
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
 
-@Component
-export default class HomeComponent extends Vue {
+  @Component
+  export default class HomeDashboardComponent extends Vue {
 
-}
+  }
 </script>
 

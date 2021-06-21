@@ -19,29 +19,25 @@
         </div>
       </div>
    </div>
-
   </div>
 </template>
 
 <script lang="ts">
-import { Vue, Component, Prop } from 'nuxt-property-decorator';
-import OrderCard from "~/components/pages/store/OrderCard.vue";
-import {$axios} from "~/utilities/api";
-import {Order} from "../../../../models/order/order";
+  import { Vue, Component, Prop } from 'nuxt-property-decorator';
+  import OrderCard from "~/components/pages/store/OrderCard.vue";
+  import {$axios} from "~/utilities/api";
+  import {Order} from "../../../../models/order/order";
 
-@Component(
-  {
+  @Component({
     components:{
       OrderCard
     }
-  }
-)
+  })
+  export default class OrdersDashboardComponent extends Vue {
+    public orders:Order[] = []
 
-
-export default class OrdersComponent extends Vue {
-  public orders:Order[] = []
-  async fetch(){
-    this.orders = await $axios.$get(`${process.env.BASE_URL}/data/store/orders/orders.json`)
+    async fetch(){
+      this.orders = await $axios.$get(`${process.env.BASE_URL}/data/store/orders/orders.json`)
+    }
   }
-}
 </script>

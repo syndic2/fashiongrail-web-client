@@ -15,6 +15,9 @@ module.exports = {
       height: {
         'fit-content': 'fit-content'
       },
+      borderWidth: {
+        '1': '1px'
+      },
       borderRadius: {
         '3.5xl': '1.75rem',
         '4xl': '2.5rem'

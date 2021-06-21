@@ -1,5 +1,11 @@
 export default {
+  regular: [
+    'faStar'
+  ],
   solid: [
+    'faPlus',
+    'faMinus',
+    'faTimes',
     'faBell',
     'faStar',
     'faHeart',

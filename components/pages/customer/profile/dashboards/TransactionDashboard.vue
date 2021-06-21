@@ -37,13 +37,28 @@
         </button>
       </div>
     </div>
+    
+    <!-- MODAL -->
+    <ModalBox :styleClasess="'bg-light-grey rounded-4xl px-8 pt-6 pb-20'" :onOpen="toogleModal" @onClose="onCloseModal">
+      <TrackOrder v-if="transaction.status === 'delivered'" />
+      <RateOrder v-else-if="transaction.status === 'rating'" />
+    </ModalBox>
   </div>
 </template>
 
 <script lang="ts">
   import { Vue, Component, Prop } from 'nuxt-property-decorator';
+  import ModalBox from '../../../../utilities/widgets/modal/ModalBox.vue';
+  import TrackOrder from '../transaction/TrackOrder.vue';
+  import RateOrder from '../transaction/RateOrder.vue';
 
-  @Component
+  @Component({
+    components: {
+      ModalBox,
+      TrackOrder,
+      RateOrder
+    }
+  })
   export default class TransactionDashboardComponent extends Vue {
     public transaction= { text: 'bayar sekarang', status: 'unpaid' };
     public menuButtons: any[]= [
@@ -52,9 +67,15 @@
       { name: 'dikirim', status: 'delivered', clicked: false },
       { name: 'penilaian', status: 'rating', clicked: false }
     ];
+    public toogleModal: boolean= false;
+
+    reset() {
+      this.menuButtons.forEach(menu => menu.clicked= false);
+      this.toogleModal= false;
+    }
 
     openMenu(menu: any) {
-      this.menuButtons.forEach(menu => menu.clicked= false);
+      this.reset();
       this.transaction.status= menu.status;
       menu.clicked= true;
 
@@ -64,11 +85,13 @@
       else if (menu.status === 'rating') this.transaction.text= 'beri penilaian'
     }
 
+    onCloseModal(isOpen: boolean) {
+      this.toogleModal= isOpen;
+    }
+
     onProcess() {
-      if (this.transaction.status === 'delivered') {
-        alert('delivered');
-      } else if (this.transaction.status === 'rating') {
-        alert('rating');
+      if (this.transaction.status === 'delivered' || this.transaction.status === 'rating') {
+        this.toogleModal= true;
       }
     }
   }
