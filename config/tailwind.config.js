@@ -12,8 +12,23 @@ module.exports = {
       width: {
         'fit-content': 'fit-content'
       },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/5': '60%',
+        '3/4': '75%',
+        '4/5': '80%'
+      },
       height: {
         'fit-content': 'fit-content'
+      },
+      maxHeight: {
+        '150px': '150px',
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/5': '60%',
+        '3/4': '75%',
+        '4/5': '80%'
       },
       borderWidth: {
         '1': '1px'

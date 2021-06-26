@@ -14,5 +14,5 @@ declare module '*.vue' {
 }*/
 
 declare module 'vue-slick-carousel';
-
+declare module 'vue-textarea-autosize';
 

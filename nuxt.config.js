@@ -27,7 +27,8 @@ export default {
   plugins: [
     '~/plugins/helpers.ts',
     '~/plugins/axios-accessor.ts',
-    '~/plugins/vue-fragment.ts'
+    '~/plugins/vue-fragment.ts',
+    '~/plugins/vue-textarea-autosize.ts'
   ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components

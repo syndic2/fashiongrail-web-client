@@ -13,6 +13,7 @@ export default {
     'faMinusCircle',
     'faTrashAlt',
     'faPowerOff',
+    'faEllipsisV',
     'faUser',
     'faEnvelope',
     'faTruck',
